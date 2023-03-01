@@ -19,7 +19,7 @@ p {
 
 /** Utility Classes **/
 .container{
-  padding: 0 4rem;
+  padding: 0 2rem;
   margin: auto;
   max-width: 1100px;
   overflow: hidden;
@@ -43,6 +43,11 @@ p {
   color: #fff;
 }
 
+.bg-primary {
+  background: #93cb52;
+  color: #fff;
+}
+
 .list {
   margin: 0.5rem 0;
   list-style: none;
@@ -54,7 +59,7 @@ p {
 }
 
 .l-heading {
-  font-size: 4rem;
+  font-size: 2rem;
   margin-bottom: 0.75rem;
   line-height: 1.1;
 }
@@ -74,9 +79,9 @@ p {
 .py-2 {padding: 2rem 0;}
 .py-3 {padding: 3rem 0;}
 
-.p-1 {padding: 1.5rem 0;}
-.p-2 {padding: 2rem 0;}
-.p-3 {padding: 3rem 0;}
+.p-1 {padding: 1.5rem;}
+.p-2 {padding: 2rem;}
+.p-3 {padding: 3rem;}
 
 .btn {
   display: inline-block;
@@ -150,9 +155,9 @@ p {
 }
 
 /** Section: What we do **/
-#what, .items {
+
+#what .items {
   display: flex;
-  justify-content: center;
   padding: 1rem;
 }
 
@@ -185,21 +190,40 @@ p {
   background-size: cover;
 }
 
-/** Clients**/
+/** Section: Clients**/
 #clients .items{
   display: flex;
-  cursor: pointer;
+  justify-content: center;
 }
 
 #clients .items img {
   display: block;
+  margin: auto;
+  width: 60%;
 }
-/*
-#clients .items 
-#logo1:hover{
-  background: url(../img/logo1a.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  cursor: p
+
+/** Section: Contact**/
+#contact {
+  display: flex;
+}
+
+#contact .map, #contact .contact-form {
+  flex: 1;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.5rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
 }
